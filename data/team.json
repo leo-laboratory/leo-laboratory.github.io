@@ -108,11 +108,11 @@
       "name": "Shaban Muhammed",
       "role": "project",
       "title": {
-        "en": "Adjunct Member · Dankook University (Prof. Eunyu Kim)",
-        "ko": "겸임 연구원 · 단국대학교 (김은유 교수)"
+        "en": "Adjunct Member · Duke Kunshan University (Prof. Eunyu Kim)",
+        "ko": "겸임 연구원 · 듀크 쿤샨대학교 (김은유 교수)"
       },
       "affiliations": [
-        { "en": "Dankook University, Lab of Prof. Eunyu Kim", "ko": "단국대학교 김은유 교수 연구실" }
+        { "en": "Duke Kunshan University, Lab of Prof. Eunyu Kim", "ko": "듀크 쿤샨대학교 김은유 교수 연구실" }
       ],
       "bio": { "en": "", "ko": "" },
       "joined": "2026.03"
