@@ -35,7 +35,7 @@ export default function NewsPage() {
               <div className="text-xs mb-2 uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>
                 {formatDate(item.date, locale)}
               </div>
-              <h2 className="text-xl font-bold mb-2" style={{ color: 'var(--text-primary)' }}>
+              <h2 className="text-xl font-serif font-medium mb-2" style={{ color: 'var(--text-primary)' }}>
                 {item.title[locale] ?? item.title.en}
               </h2>
               <p className="text-base leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
