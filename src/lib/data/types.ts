@@ -46,6 +46,9 @@ export interface NewsItem {
   body: Bilingual
 }
 
+export const TAG_VOCAB = ['cancer', 'evolution', 'organoids', 'regeneration', 'stemcell'] as const
+export type Tag = (typeof TAG_VOCAB)[number]
+
 export interface Publication {
   id: string
   title: string
@@ -55,6 +58,10 @@ export interface Publication {
   doi?: string
   url?: string
   preprint?: string
+  tags?: Tag[]
+  citations?: number
+  citationsAsOf?: string
+  manualTags?: boolean
 }
 
 export interface PublicationsByYear {
