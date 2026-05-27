@@ -1,5 +1,3 @@
-import { existsSync } from 'fs'
-import { join } from 'path'
 import labJson from '@data/lab.json'
 import teamJson from '@data/team.json'
 import alumniJson from '@data/alumni.json'
@@ -19,13 +17,6 @@ import type {
   TeamMember,
 } from './types'
 
-const PUBLIC_DIR = join(process.cwd(), 'public')
-
-function photoExists(photo?: string): boolean {
-  if (!photo) return false
-  return existsSync(join(PUBLIC_DIR, photo))
-}
-
 export function getLabMeta(): LabMeta {
   return labJson as LabMeta
 }
@@ -33,7 +24,7 @@ export function getLabMeta(): LabMeta {
 export function getTeam(): TeamMember[] {
   return (teamJson.members as TeamMember[]).map(m => ({
     ...m,
-    hasPhoto: photoExists(m.photo),
+    hasPhoto: typeof m.photo === 'string' && m.photo.length > 0,
   }))
 }
 
@@ -52,7 +43,7 @@ export function getTeamByRole(): Array<{ role: RoleId; members: TeamMember[] }> 
 export function getAlumni(): AlumniMember[] {
   return (alumniJson.members as AlumniMember[]).map(m => ({
     ...m,
-    hasPhoto: photoExists(m.photo),
+    hasPhoto: typeof m.photo === 'string' && m.photo.length > 0,
   }))
 }
 
