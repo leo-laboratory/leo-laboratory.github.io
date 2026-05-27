@@ -15,7 +15,7 @@ export default function JoinPage() {
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <div
-          className="p-8 rounded-lg border"
+          className="p-8 rounded-sm border"
           style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border)' }}
         >
           <p className="text-base leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
@@ -23,8 +23,8 @@ export default function JoinPage() {
           </p>
           <a
             href={`mailto:${piEmail}`}
-            className="inline-block px-5 py-2.5 rounded-md text-sm font-semibold transition-colors"
-            style={{ background: 'var(--accent)', color: '#ffffff' }}
+            className="inline-block px-5 py-2.5 rounded-sm text-sm font-semibold transition-colors"
+            style={{ background: 'var(--accent)', color: '#fbf7ec' }}
           >
             {t('join.contact_pi')} →
           </a>
