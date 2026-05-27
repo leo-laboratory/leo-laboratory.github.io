@@ -1,3 +1,16 @@
 {
-  "members": []
+  "members": [
+    {
+      "id": "yejin-kwak",
+      "name": "Yejin Kwak",
+      "nameKo": "곽예진",
+      "formerRole": "project",
+      "period": "2024.07–2025.02",
+      "currentPosition": {
+        "en": "Karlsruhe Institute of Technology (KIT), Institute for Automation and Applied Informatics (IAI)",
+        "ko": "Karlsruhe Institute of Technology (KIT), Institute for Automation and Applied Informatics (IAI)"
+      },
+      "photo": "/assets/team/yejin.png"
+    }
+  ]
 }

@@ -23,6 +23,99 @@
       "scholar": "https://scholar.google.com/citations?user=WM0sg9cAAAAJ",
       "email": "leeheetak@ibs.re.kr",
       "joined": "2023"
+    },
+    {
+      "id": "youngchul-oh",
+      "name": "Youngchul Oh",
+      "nameKo": "오영철",
+      "role": "integrative",
+      "title": {
+        "en": "Ph.D.–M.S. Integrative Program, POSTECH",
+        "ko": "통합과정 박사·석사 (POSTECH)"
+      },
+      "affiliations": [
+        { "en": "POSTECH, integrative graduate program", "ko": "POSTECH 통합과정" }
+      ],
+      "bio": { "en": "", "ko": "" },
+      "photo": "/assets/team/youngchul.png",
+      "joined": "2023.03"
+    },
+    {
+      "id": "yeongjun-kim",
+      "name": "Yeongjun Kim",
+      "nameKo": "김영준",
+      "role": "integrative",
+      "title": {
+        "en": "Ph.D.–M.S. Integrative Program, KHU",
+        "ko": "통합과정 박사·석사 (경희대)"
+      },
+      "affiliations": [
+        { "en": "Kyung Hee University, integrative graduate program", "ko": "경희대학교 통합과정" }
+      ],
+      "bio": { "en": "", "ko": "" },
+      "photo": "/assets/team/yeongjun.jpg",
+      "joined": "2024.03"
+    },
+    {
+      "id": "ohbin-kwon",
+      "name": "Ohbin Kwon",
+      "nameKo": "권오빈",
+      "role": "integrative",
+      "title": {
+        "en": "Ph.D.–M.S. Integrative Program, KAIST",
+        "ko": "통합과정 박사·석사 (KAIST)"
+      },
+      "affiliations": [
+        { "en": "KAIST, integrative graduate program", "ko": "KAIST 통합과정" }
+      ],
+      "bio": { "en": "", "ko": "" },
+      "photo": "/assets/team/ohbin.jpg"
+    },
+    {
+      "id": "chaewon-lee",
+      "name": "Chaewon Lee",
+      "nameKo": "이채원",
+      "role": "project",
+      "title": {
+        "en": "Adjunct Member · Chungnam National University (Prof. Donghwan Shim)",
+        "ko": "겸임 연구원 · 충남대학교 (심동환 교수)"
+      },
+      "affiliations": [
+        { "en": "Chungnam National University, Lab of Prof. Donghwan Shim", "ko": "충남대학교 심동환 교수 연구실" }
+      ],
+      "bio": { "en": "", "ko": "" },
+      "photo": "/assets/team/chaewon.png",
+      "joined": "2024.01"
+    },
+    {
+      "id": "onyu-shin",
+      "name": "Onyu Shin",
+      "nameKo": "신온유",
+      "role": "project",
+      "title": {
+        "en": "Adjunct Member · IBS Center for Genome Engineering (Dr. Bon-Kyoung Koo)",
+        "ko": "겸임 연구원 · IBS 유전체 교정 연구단 (구본경 박사)"
+      },
+      "affiliations": [
+        { "en": "IBS Center for Genome Engineering, Lab of Dr. Bon-Kyoung Koo", "ko": "IBS 유전체 교정 연구단 구본경 박사 연구실" }
+      ],
+      "bio": { "en": "", "ko": "" },
+      "photo": "/assets/team/onyu.jpg",
+      "joined": "2024.09"
+    },
+    {
+      "id": "shaban-muhammed",
+      "name": "Shaban Muhammed",
+      "role": "project",
+      "title": {
+        "en": "Adjunct Member · Dankook University (Prof. Eunyu Kim)",
+        "ko": "겸임 연구원 · 단국대학교 (김은유 교수)"
+      },
+      "affiliations": [
+        { "en": "Dankook University, Lab of Prof. Eunyu Kim", "ko": "단국대학교 김은유 교수 연구실" }
+      ],
+      "bio": { "en": "", "ko": "" },
+      "joined": "2026.03"
     }
   ],
   "roles": [
