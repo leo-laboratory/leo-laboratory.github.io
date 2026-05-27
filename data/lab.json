@@ -1,0 +1,51 @@
+{
+  "name": {
+    "en": "LEO Lab",
+    "ko": "LEO 연구실"
+  },
+  "fullName": {
+    "en": "Lee's Evolution and Omics",
+    "ko": "이희탁 진화·오믹스 연구실"
+  },
+  "founded": 2023,
+  "tagline": {
+    "en": "Omics for understanding Evolution",
+    "ko": "진화를 이해하기 위한 오믹스"
+  },
+  "pi": {
+    "name": "Heetak Lee",
+    "nameKo": "이희탁",
+    "credentials": "Ph.D.",
+    "primaryAffiliation": {
+      "en": "IBS Center for Genome Engineering",
+      "ko": "IBS 유전체 교정 연구단"
+    },
+    "appointments": [
+      {
+        "title": { "en": "Senior Research Fellow", "ko": "선임연구위원" },
+        "institution": { "en": "IBS Center for Genome Engineering", "ko": "IBS 유전체 교정 연구단" },
+        "primary": true
+      },
+      {
+        "title": { "en": "Associate Professor", "ko": "부교수" },
+        "institution": { "en": "UST IBS School", "ko": "UST IBS 학교" },
+        "primary": false
+      },
+      {
+        "title": { "en": "University-Research Institute Professor", "ko": "대학-연구기관 교수" },
+        "institution": { "en": "SKKU Department of MetaBiohealth", "ko": "성균관대학교 메타바이오헬스학과" },
+        "primary": false
+      }
+    ],
+    "orcid": "0000-0002-7093-842X",
+    "scholarId": "WM0sg9cAAAAJ",
+    "emails": ["leeheetak@ibs.re.kr", "leeheetak@gmail.com"]
+  },
+  "address": {
+    "room": "C352",
+    "line": { "en": "55 Expo-ro, Yuseong-gu", "ko": "유성구 엑스포로 55" },
+    "city": { "en": "Daejeon", "ko": "대전" },
+    "postal": "34126",
+    "country": { "en": "Republic of Korea", "ko": "대한민국" }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "id": "lab-founded-2023",
+      "date": "2023-01-01",
+      "title": {
+        "en": "LEO Lab is founded",
+        "ko": "LEO 연구실 설립"
+      },
+      "body": {
+        "en": "LEO Lab — Lee's Evolution and Omics — was founded at IBS Center for Genome Engineering. We study how cellular phenotypes evolve across species and how stem-cell dynamics shape development and cancer.",
+        "ko": "LEO 연구실(이희탁 진화·오믹스 연구실)이 IBS 유전체 교정 연구단에 설립되었습니다. 우리는 종 간 세포 표현형의 진화와 줄기세포 동역학이 발생과 암 형성에 미치는 영향을 연구합니다."
+      }
+    }
+  ]
+}

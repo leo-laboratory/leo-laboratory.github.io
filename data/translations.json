@@ -1,0 +1,75 @@
+{
+  "nav.home": { "en": "Home", "ko": "홈" },
+  "nav.team": { "en": "Team", "ko": "팀" },
+  "nav.research": { "en": "Research", "ko": "연구" },
+  "nav.publications": { "en": "Publications", "ko": "논문" },
+  "nav.news": { "en": "News", "ko": "소식" },
+  "nav.join": { "en": "Join", "ko": "모집" },
+  "nav.contact": { "en": "Contact", "ko": "연락처" },
+  "nav.alumni": { "en": "Alumni", "ko": "동문" },
+  "nav.notes": { "en": "Notes", "ko": "노트" },
+  "nav.tools": { "en": "Tools", "ko": "도구" },
+
+  "common.lang.en": { "en": "EN", "ko": "EN" },
+  "common.lang.ko": { "en": "KO", "ko": "KO" },
+  "common.theme.light": { "en": "Light mode", "ko": "라이트 모드" },
+  "common.theme.dark": { "en": "Dark mode", "ko": "다크 모드" },
+  "common.see_all": { "en": "See all", "ko": "모두 보기" },
+  "common.read_more": { "en": "Read more", "ko": "더 읽기" },
+  "common.coming_soon": { "en": "Coming soon", "ko": "준비 중" },
+  "common.back_home": { "en": "Back to home", "ko": "홈으로" },
+
+  "hero.cta.research": { "en": "Explore Research", "ko": "연구 살펴보기" },
+  "hero.cta.join": { "en": "Join the Lab", "ko": "연구실 합류" },
+  "hero.founded": { "en": "Founded {year}", "ko": "{year}년 설립" },
+
+  "home.research.title": { "en": "Research Themes", "ko": "연구 주제" },
+  "home.news.title": { "en": "Latest News", "ko": "최근 소식" },
+  "home.pubs.title": { "en": "Recent Publications", "ko": "최근 논문" },
+  "home.cta.title": { "en": "Join LEO Lab", "ko": "LEO 연구실 합류하기" },
+  "home.cta.body": { "en": "We welcome motivated students and postdocs interested in evolutionary cell biology, stem cells, and computational genomics.", "ko": "진화 세포생물학, 줄기세포, 계산 유전체학에 관심 있는 학생과 박사후연구원을 기다립니다." },
+
+  "team.title": { "en": "Team", "ko": "팀" },
+  "team.intro": { "en": "The people behind LEO Lab.", "ko": "LEO 연구실 구성원입니다." },
+  "team.role.pi": { "en": "Principal Investigator", "ko": "책임 연구원" },
+  "team.role.integrative": { "en": "PhD–Master Integrative Program", "ko": "석박사 통합 과정" },
+  "team.role.phd": { "en": "PhD Students", "ko": "박사 과정" },
+  "team.role.master": { "en": "Master's Students", "ko": "석사 과정" },
+  "team.role.project": { "en": "Project / Adjunct Members", "ko": "프로젝트·겸임 연구원" },
+  "team.role.undergrad": { "en": "Undergraduate Students", "ko": "학부 연구생" },
+  "team.role.alumni_link": { "en": "View Alumni →", "ko": "동문 보기 →" },
+  "team.empty.role": { "en": "No members in this role yet.", "ko": "이 역할의 구성원이 아직 없습니다." },
+
+  "research.title": { "en": "Research", "ko": "연구" },
+  "research.intro": { "en": "Three intertwined themes drive our work.", "ko": "세 가지 연구 주제가 서로 맞물려 우리의 연구를 이끕니다." },
+
+  "publications.title": { "en": "Publications", "ko": "논문" },
+  "publications.intro": { "en": "Peer-reviewed papers and preprints from the lab.", "ko": "연구실의 게재 논문과 프리프린트입니다." },
+  "publications.empty": { "en": "Publication list will appear here once extracted from ORCID.", "ko": "ORCID에서 추출된 논문 목록이 곧 표시됩니다." },
+
+  "news.title": { "en": "News", "ko": "소식" },
+  "news.intro": { "en": "Lab milestones, papers, and announcements.", "ko": "연구실의 주요 소식과 발표입니다." },
+
+  "join.title": { "en": "Join the Lab", "ko": "연구실 합류" },
+  "join.intro": { "en": "We are recruiting at all levels — graduate students, postdocs, and undergraduate researchers.", "ko": "대학원생, 박사후연구원, 학부 연구생을 모집합니다." },
+  "join.contact_pi": { "en": "Email the PI", "ko": "지도교수에게 이메일 보내기" },
+
+  "contact.title": { "en": "Contact", "ko": "연락처" },
+  "contact.intro": { "en": "How to reach us.", "ko": "연락 방법입니다." },
+  "contact.address": { "en": "Address", "ko": "주소" },
+  "contact.email": { "en": "Email", "ko": "이메일" },
+  "contact.affiliation": { "en": "Affiliation", "ko": "소속" },
+
+  "alumni.title": { "en": "Alumni", "ko": "동문" },
+  "alumni.intro": { "en": "Former members of the lab and where they went next.", "ko": "연구실 동문과 현재 행보입니다." },
+  "alumni.empty": { "en": "No alumni yet — the lab was founded in 2023.", "ko": "아직 동문이 없습니다 — 2023년에 설립된 연구실입니다." },
+
+  "notes.title": { "en": "Notes", "ko": "노트" },
+  "notes.intro": { "en": "Lab notes, technical posts, and reading recommendations.", "ko": "연구실 노트와 기술 포스트, 읽을거리입니다." },
+
+  "tools.title": { "en": "Tools", "ko": "도구" },
+  "tools.intro": { "en": "Open-source software and online tools from the lab.", "ko": "연구실에서 공개한 오픈소스와 온라인 도구입니다." },
+
+  "footer.copyright": { "en": "© {year} LEO Lab. All rights reserved.", "ko": "© {year} LEO 연구실. All rights reserved." },
+  "footer.address_label": { "en": "Visit us", "ko": "오시는 길" }
+}

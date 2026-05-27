@@ -1,0 +1,40 @@
+{
+  "areas": [
+    {
+      "id": "evolutionary-cell-biology",
+      "title": {
+        "en": "Evolutionary Cell Biology",
+        "ko": "진화 세포생물학"
+      },
+      "summary": {
+        "en": "Decoding the diversity of cellular phenotypes and evolutionary dynamics across species utilizing high-resolution single-cell and spatial omics.",
+        "ko": "고해상도 단일세포 및 공간 오믹스 기술을 활용해 종 간 세포 표현형의 다양성과 진화 동역학을 규명합니다."
+      },
+      "accent": "emerald"
+    },
+    {
+      "id": "stem-cells-cancer",
+      "title": {
+        "en": "Stem Cells & Cancer",
+        "ko": "줄기세포와 암"
+      },
+      "summary": {
+        "en": "Uncovering the fundamental drivers of development and tumorigenesis by precisely modeling the complex interplay between intrinsic cellular states and extrinsic microenvironmental factors.",
+        "ko": "세포 내재적 상태와 미세환경 인자 간의 복잡한 상호작용을 정밀하게 모델링하여 발생과 종양 형성의 근본 동인을 밝혀냅니다."
+      },
+      "accent": "amber"
+    },
+    {
+      "id": "analytic-tool-development",
+      "title": {
+        "en": "Analytic Tool Development",
+        "ko": "분석 도구 개발"
+      },
+      "summary": {
+        "en": "Designing advanced computational algorithms and innovative genetic engineering platforms.",
+        "ko": "고도화된 계산 알고리듬과 혁신적인 유전체 공학 플랫폼을 설계합니다."
+      },
+      "accent": "emerald"
+    }
+  ]
+}

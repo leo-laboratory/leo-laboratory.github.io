@@ -1,0 +1,36 @@
+{
+  "members": [
+    {
+      "id": "heetak-lee",
+      "name": "Heetak Lee",
+      "nameKo": "이희탁",
+      "role": "pi",
+      "title": {
+        "en": "Principal Investigator · Ph.D.",
+        "ko": "책임연구원 · Ph.D."
+      },
+      "affiliations": [
+        { "en": "Senior Research Fellow, IBS Center for Genome Engineering", "ko": "IBS 유전체 교정 연구단 선임연구위원" },
+        { "en": "Associate Professor, UST IBS School", "ko": "UST IBS 학교 부교수" },
+        { "en": "University-Research Institute Professor, SKKU Department of MetaBiohealth", "ko": "성균관대학교 메타바이오헬스학과 대학-연구기관 교수" }
+      ],
+      "bio": {
+        "en": "Heetak Lee leads LEO Lab, studying the evolutionary dynamics of cellular phenotypes through single-cell and spatial omics, with a focus on stem cells and cancer biology.",
+        "ko": "이희탁 박사는 LEO 연구실을 이끌며 단일세포 및 공간 오믹스를 활용해 세포 표현형의 진화 동역학을 연구하고 있으며, 줄기세포와 암 생물학에 관심을 두고 있습니다."
+      },
+      "photo": "/assets/team/heetak-lee.png",
+      "orcid": "0000-0002-7093-842X",
+      "scholar": "https://scholar.google.com/citations?user=WM0sg9cAAAAJ",
+      "email": "leeheetak@ibs.re.kr",
+      "joined": "2023"
+    }
+  ],
+  "roles": [
+    { "id": "pi", "order": 1 },
+    { "id": "integrative", "order": 2 },
+    { "id": "phd", "order": 3 },
+    { "id": "master", "order": 4 },
+    { "id": "project", "order": 5 },
+    { "id": "undergrad", "order": 6 }
+  ]
+}
