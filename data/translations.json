@@ -68,6 +68,7 @@
   "alumni.title": { "en": "Alumni", "ko": "동문" },
   "alumni.intro": { "en": "Former members of the lab and where they went next.", "ko": "연구실 동문과 현재 행보입니다." },
   "alumni.empty": { "en": "No alumni yet — the lab was founded in 2023.", "ko": "아직 동문이 없습니다 — 2023년에 설립된 연구실입니다." },
+  "alumni.current_position": { "en": "Current position", "ko": "현재 소속" },
 
   "notes.title": { "en": "Notes", "ko": "노트" },
   "notes.intro": { "en": "Lab notes, technical posts, and reading recommendations.", "ko": "연구실 노트와 기술 포스트, 읽을거리입니다." },
