@@ -51,6 +51,17 @@
   "publications.title": { "en": "Publications", "ko": "논문" },
   "publications.intro": { "en": "Peer-reviewed papers and preprints from the lab.", "ko": "연구실의 게재 논문과 프리프린트입니다." },
   "publications.empty": { "en": "Publication list will appear here once extracted from ORCID.", "ko": "ORCID에서 추출된 논문 목록이 곧 표시됩니다." },
+  "pubs.counter": {
+    "en": "{count} papers in venues including Molecular Cancer, Nucleic Acids Research, and Science Advances.",
+    "ko": "{count}편의 논문이 Molecular Cancer, Nucleic Acids Research, Science Advances 등의 학술지에 게재되었습니다."
+  },
+  "pubs.cited": { "en": "cited {n}×", "ko": "{n}회 인용" },
+  "pubs.tag.all": { "en": "All", "ko": "전체" },
+  "pubs.tag.cancer": { "en": "cancer", "ko": "암" },
+  "pubs.tag.evolution": { "en": "evolution", "ko": "진화" },
+  "pubs.tag.organoids": { "en": "organoids", "ko": "오가노이드" },
+  "pubs.tag.regeneration": { "en": "regeneration", "ko": "재생" },
+  "pubs.tag.stemcell": { "en": "stem cell", "ko": "줄기세포" },
 
   "news.title": { "en": "News", "ko": "소식" },
   "news.intro": { "en": "Lab milestones, papers, and announcements.", "ko": "연구실의 주요 소식과 발표입니다." },
