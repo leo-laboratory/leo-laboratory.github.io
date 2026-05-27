@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Noto_Sans_KR } from 'next/font/google'
+import { Inter, Noto_Sans_KR, Cormorant_Garamond } from 'next/font/google'
 import { ThemeProvider } from '@/lib/theme'
 import { LocaleProvider } from '@/lib/i18n'
 import { LabHeader } from '@/components/layout/LabHeader'
@@ -16,6 +16,14 @@ const notoSansKR = Noto_Sans_KR({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-noto-kr',
+})
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-cormorant',
 })
 
 export const metadata: Metadata = {
@@ -53,7 +61,7 @@ const themeBootstrap = `
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="light" suppressHydrationWarning className={`${inter.variable} ${notoSansKR.variable}`}>
+    <html lang="en" data-theme="light" suppressHydrationWarning className={`${inter.variable} ${notoSansKR.variable} ${cormorant.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootstrap }} />
       </head>
