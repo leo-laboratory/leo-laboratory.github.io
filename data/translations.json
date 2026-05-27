@@ -22,6 +22,10 @@
   "hero.cta.research": { "en": "Explore Research", "ko": "연구 살펴보기" },
   "hero.cta.join": { "en": "Join the Lab", "ko": "연구실 합류" },
   "hero.founded": { "en": "Founded {year}", "ko": "{year}년 설립" },
+  "hero.subline": {
+    "en": "A computational and experimental biology group at the IBS Center for Genome Engineering — studying the diversity of cellular phenotypes and evolutionary dynamics through single-cell and spatial omics.",
+    "ko": "IBS 유전체 교정 연구단에 위치한 계산·실험 생물학 연구실로, 단일세포 및 공간 오믹스를 통해 세포 표현형의 다양성과 진화 동역학을 연구합니다."
+  },
 
   "home.research.title": { "en": "Research Themes", "ko": "연구 주제" },
   "home.news.title": { "en": "Latest News", "ko": "최근 소식" },
