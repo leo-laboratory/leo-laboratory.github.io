@@ -22,11 +22,11 @@ export function NewsAndPubsTeaser() {
   const pubs = getPublications(3)
 
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="grid md:grid-cols-2 gap-12">
         <div>
           <div className="flex items-baseline justify-between mb-6">
-            <h2 className="text-2xl font-bold" style={{ color: 'var(--text-primary)' }}>
+            <h2 className="text-2xl font-serif font-medium" style={{ color: 'var(--text-primary)' }}>
               {t('home.news.title')}
             </h2>
             <Link href="/news/" className="text-sm hover:underline" style={{ color: 'var(--accent-amber)' }}>
@@ -57,7 +57,7 @@ export function NewsAndPubsTeaser() {
 
         <div>
           <div className="flex items-baseline justify-between mb-6">
-            <h2 className="text-2xl font-bold" style={{ color: 'var(--text-primary)' }}>
+            <h2 className="text-2xl font-serif font-medium" style={{ color: 'var(--text-primary)' }}>
               {t('home.pubs.title')}
             </h2>
             <Link href="/publications/" className="text-sm hover:underline" style={{ color: 'var(--accent-amber)' }}>

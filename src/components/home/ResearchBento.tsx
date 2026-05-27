@@ -9,9 +9,9 @@ export function ResearchBento() {
   const areas = getResearchAreas()
 
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="flex items-baseline justify-between mb-8">
-        <h2 className="text-3xl font-bold" style={{ color: 'var(--text-primary)' }}>
+        <h2 className="text-3xl font-serif font-medium" style={{ color: 'var(--text-primary)' }}>
           {t('home.research.title')}
         </h2>
         <Link
@@ -30,7 +30,7 @@ export function ResearchBento() {
             <Link
               key={area.id}
               href={`/research/#${area.id}`}
-              className="block p-6 rounded-lg border transition-transform hover:-translate-y-0.5"
+              className="block p-6 rounded-sm border transition-transform hover:-translate-y-0.5"
               style={{
                 background: 'var(--bg-secondary)',
                 borderColor: 'var(--border)',
