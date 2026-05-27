@@ -35,6 +35,8 @@ interface OrcidWorksResponse {
   group?: Array<{ 'work-summary'?: OrcidWorkSummary[] }>
 }
 
+type Tag = 'cancer' | 'evolution' | 'organoids' | 'regeneration' | 'stemcell'
+
 interface Publication {
   id: string
   title: string
@@ -44,6 +46,10 @@ interface Publication {
   doi?: string
   url?: string
   preprint?: string
+  tags?: Tag[]
+  citations?: number
+  citationsAsOf?: string
+  manualTags?: boolean
 }
 
 const PROJECT_ROOT = resolve(import.meta.dirname, '..')
@@ -111,6 +117,72 @@ function authorsFromCrossref(msg: CrossrefMessage): string[] {
   })
 }
 
+interface OpenAlexWork {
+  cited_by_count?: number | null
+}
+
+async function fetchOpenAlexCitations(doi: string): Promise<number | null> {
+  try {
+    const url = `https://api.openalex.org/works/doi:${encodeURIComponent(doi)}`
+    const res = await fetch(url, { headers: HEADERS })
+    if (!res.ok) return null
+    const json = (await res.json()) as OpenAlexWork
+    return typeof json.cited_by_count === 'number' ? json.cited_by_count : null
+  } catch {
+    return null
+  }
+}
+
+interface SemanticScholarWork {
+  citationCount?: number | null
+}
+
+async function fetchSemanticScholarCitations(doi: string): Promise<number | null> {
+  try {
+    const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${encodeURIComponent(doi)}?fields=citationCount`
+    const res = await fetch(url, { headers: HEADERS })
+    if (!res.ok) return null
+    const json = (await res.json()) as SemanticScholarWork
+    return typeof json.citationCount === 'number' ? json.citationCount : null
+  } catch {
+    return null
+  }
+}
+
+async function fetchCitations(doi: string): Promise<number | null> {
+  const openalex = await fetchOpenAlexCitations(doi)
+  if (openalex !== null) return openalex
+  return fetchSemanticScholarCitations(doi)
+}
+
+const TAG_RULES: Array<{ tag: Tag; pattern: RegExp }> = [
+  { tag: 'organoids', pattern: /\borganoid/i },
+  { tag: 'cancer', pattern: /\b(cancer|tumor|tumour|carcinoma|oncolog|metasta)/i },
+  { tag: 'stemcell', pattern: /\b(stem[\s-]?cell|ipsc|pluripotent|niche|self[-\s]?renew)/i },
+  { tag: 'regeneration', pattern: /\b(regenerat)/i },
+  { tag: 'evolution', pattern: /\b(evolution|phylogen|species|lineage|conserv|divergen)/i },
+]
+
+function inferTags(title: string, venue: string): Tag[] {
+  const haystack = `${title} ${venue}`
+  const tags: Tag[] = []
+  for (const { tag, pattern } of TAG_RULES) {
+    if (pattern.test(haystack)) tags.push(tag)
+  }
+  return tags
+}
+
+function loadExistingPublications(path: string): Map<string, Publication> {
+  try {
+    const existing = JSON.parse(readFileSync(path, 'utf8')) as { items?: Publication[] }
+    const map = new Map<string, Publication>()
+    for (const p of existing.items ?? []) map.set(p.id, p)
+    return map
+  } catch {
+    return new Map()
+  }
+}
+
 async function main() {
   const lab = JSON.parse(readFileSync(LAB_PATH, 'utf8')) as LabFile
   const orcid = lab.pi.orcid
@@ -175,10 +247,46 @@ async function main() {
 
   publications.sort((a, b) => b.year - a.year)
 
+  // Enrichment pass: OpenAlex citations + tag inference. Preserves manualTags.
+  const existing = loadExistingPublications(OUT_PATH)
+  const today = new Date().toISOString().slice(0, 10)
+  let cited = 0
+  let tagged = 0
+
+  for (const pub of publications) {
+    const prev = existing.get(pub.id)
+
+    if (pub.doi) {
+      const n = await fetchCitations(pub.doi)
+      if (n !== null) {
+        pub.citations = n
+        pub.citationsAsOf = today
+        cited++
+      } else if (prev?.citations !== undefined) {
+        pub.citations = prev.citations
+        pub.citationsAsOf = prev.citationsAsOf
+      }
+    }
+
+    if (prev?.manualTags) {
+      pub.tags = prev.tags
+      pub.manualTags = true
+    } else {
+      const inferred = inferTags(pub.title, pub.venue)
+      if (inferred.length > 0) {
+        pub.tags = inferred
+        tagged++
+      }
+    }
+  }
+
+  console.log(`  Citations fetched for ${cited}/${publications.length} publications`)
+  console.log(`  Tags inferred for ${tagged}/${publications.length} publications`)
+
   const out = {
     items: publications,
     lastUpdated: new Date().toISOString(),
-    source: `Auto-extracted from ORCID ${orcid} + Crossref enrichment.`,
+    source: `Auto-extracted from ORCID ${orcid} + Crossref enrichment + OpenAlex citations + keyword tag inference.`,
   }
   writeFileSync(OUT_PATH, JSON.stringify(out, null, 2))
   console.log(`✓ Wrote ${publications.length} publications to data/publications.json`)
