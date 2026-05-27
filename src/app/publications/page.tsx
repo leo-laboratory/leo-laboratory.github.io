@@ -12,7 +12,7 @@ export default function PublicationsPage() {
     <>
       <PageHeader title={t('publications.title')} intro={t('publications.intro')} />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         {byYear.length === 0 ? (
           <p className="text-sm italic" style={{ color: 'var(--text-muted)' }}>
             {t('publications.empty')}
@@ -22,7 +22,7 @@ export default function PublicationsPage() {
             {byYear.map(({ year, items }) => (
               <section key={year}>
                 <h2
-                  className="text-3xl font-bold mb-4 tabular-nums"
+                  className="text-3xl font-serif font-medium mb-4 tabular-nums"
                   style={{ color: 'var(--accent)' }}
                 >
                   {year}
@@ -31,10 +31,10 @@ export default function PublicationsPage() {
                   {items.map(pub => (
                     <li
                       key={pub.id}
-                      className="p-4 rounded border"
+                      className="p-4 rounded-sm border"
                       style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border)' }}
                     >
-                      <h3 className="font-semibold mb-1" style={{ color: 'var(--text-primary)' }}>
+                      <h3 className="font-serif font-medium mb-1" style={{ color: 'var(--text-primary)' }}>
                         {pub.url ? (
                           <a href={pub.url} target="_blank" rel="noreferrer" className="hover:underline">
                             {pub.title}
