@@ -1,76 +1,106 @@
 'use client'
 
+import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from '@/lib/i18n'
-import { getPublicationsByYear } from '@/lib/data'
+import { getPublicationsByYear, getTeam, getAlumni } from '@/lib/data'
+import type { Tag } from '@/lib/data'
+import { TAG_VOCAB } from '@/lib/data/types'
+import { buildAuthorIndex } from '@/lib/authorMatch'
+import type { LabAuthor } from '@/lib/authorMatch'
 import { PageHeader } from '@/components/page/PageHeader'
+import { TagFilterBar } from '@/components/publications/TagFilterBar'
+import { PublicationsCounter } from '@/components/publications/PublicationsCounter'
+import { PublicationItem } from '@/components/publications/PublicationItem'
+
+const PI_ID = 'heetak-lee'
+
+function isTag(s: string | null): s is Tag {
+  return s !== null && (TAG_VOCAB as readonly string[]).includes(s)
+}
+
+function readTagFromHash(): Tag | null {
+  if (typeof window === 'undefined') return null
+  const m = window.location.hash.match(/tag=([a-z]+)/)
+  return m && isTag(m[1]) ? m[1] : null
+}
 
 export default function PublicationsPage() {
   const { t } = useTranslation()
   const byYear = getPublicationsByYear()
+  const allPubs = byYear.flatMap(g => g.items)
+
+  const labAuthors: LabAuthor[] = useMemo(() => {
+    const team = getTeam().map(m => ({
+      id: m.id,
+      name: m.name,
+      nameKo: m.nameKo,
+      kind: 'team' as const,
+    }))
+    const alumni = getAlumni().map(m => ({
+      id: m.id,
+      name: m.name,
+      nameKo: m.nameKo,
+      kind: 'alumni' as const,
+    }))
+    return [...team, ...alumni]
+  }, [])
+
+  const authorIndex = useMemo(() => buildAuthorIndex(labAuthors), [labAuthors])
+
+  const [active, setActive] = useState<Tag | null>(null)
+
+  useEffect(() => {
+    setActive(readTagFromHash())
+    const onHash = () => setActive(readTagFromHash())
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
+
+  const handleChange = (tag: Tag | null) => {
+    setActive(tag)
+    const nextHash = tag ? `#tag=${tag}` : ''
+    if (typeof window !== 'undefined') {
+      const url = window.location.pathname + window.location.search + nextHash
+      window.history.replaceState(null, '', url)
+    }
+  }
+
+  const filteredByYear = active
+    ? byYear
+        .map(g => ({ year: g.year, items: g.items.filter(p => p.tags?.includes(active)) }))
+        .filter(g => g.items.length > 0)
+    : byYear
 
   return (
     <>
-      <PageHeader title={t('publications.title')} intro={t('publications.intro')} />
+      <PageHeader title={t('publications.title')} />
 
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-        {byYear.length === 0 ? (
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <PublicationsCounter count={allPubs.length} />
+        <TagFilterBar active={active} onChange={handleChange} />
+
+        {filteredByYear.length === 0 ? (
           <p className="text-sm italic" style={{ color: 'var(--text-muted)' }}>
             {t('publications.empty')}
           </p>
         ) : (
-          <div className="space-y-10">
-            {byYear.map(({ year, items }) => (
+          <div className="space-y-12">
+            {filteredByYear.map(({ year, items }) => (
               <section key={year}>
                 <h2
-                  className="text-3xl font-serif font-medium mb-4 tabular-nums"
+                  className="font-serif font-medium text-2xl mb-2 tabular-nums"
                   style={{ color: 'var(--accent)' }}
                 >
                   {year}
                 </h2>
-                <ul className="space-y-4">
+                <ul>
                   {items.map(pub => (
-                    <li
+                    <PublicationItem
                       key={pub.id}
-                      className="p-4 rounded-sm border"
-                      style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border)' }}
-                    >
-                      <h3 className="font-serif font-medium mb-1" style={{ color: 'var(--text-primary)' }}>
-                        {pub.url ? (
-                          <a href={pub.url} target="_blank" rel="noreferrer" className="hover:underline">
-                            {pub.title}
-                          </a>
-                        ) : (
-                          pub.title
-                        )}
-                      </h3>
-                      <p className="text-sm mb-1" style={{ color: 'var(--text-secondary)' }}>
-                        {pub.authors.join(', ')}
-                      </p>
-                      <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
-                        {pub.venue}
-                        {pub.doi && (
-                          <>
-                            {' · '}
-                            <a
-                              href={`https://doi.org/${pub.doi}`}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="hover:underline"
-                            >
-                              doi:{pub.doi}
-                            </a>
-                          </>
-                        )}
-                        {pub.preprint && (
-                          <>
-                            {' · '}
-                            <a href={pub.preprint} target="_blank" rel="noreferrer" className="hover:underline">
-                              preprint
-                            </a>
-                          </>
-                        )}
-                      </p>
-                    </li>
+                      pub={pub}
+                      index={authorIndex}
+                      excludeIds={[PI_ID]}
+                    />
                   ))}
                 </ul>
               </section>
