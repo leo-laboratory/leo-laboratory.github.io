@@ -18,6 +18,7 @@ export interface TeamMember {
   scholar?: string
   email?: string
   joined?: string
+  hasPhoto?: boolean
 }
 
 export interface AlumniMember {
@@ -27,6 +28,8 @@ export interface AlumniMember {
   formerRole: RoleId
   period: string
   currentPosition: Bilingual
+  photo?: string
+  hasPhoto?: boolean
 }
 
 export interface ResearchArea {
