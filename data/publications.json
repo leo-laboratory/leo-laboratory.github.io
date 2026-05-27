@@ -29,7 +29,13 @@
       "venue": "Nucleic Acids Research",
       "year": 2026,
       "doi": "10.1093/nar/gkag480",
-      "url": "https://doi.org/10.1093/nar/gkag480"
+      "url": "https://doi.org/10.1093/nar/gkag480",
+      "citations": 0,
+      "citationsAsOf": "2026-05-27",
+      "tags": [
+        "stemcell",
+        "evolution"
+      ]
     },
     {
       "id": "10.1016/j.jgr.2025.07.002",
@@ -48,7 +54,9 @@
       "venue": "Journal of Ginseng Research",
       "year": 2025,
       "doi": "10.1016/j.jgr.2025.07.002",
-      "url": "https://doi.org/10.1016/j.jgr.2025.07.002"
+      "url": "https://doi.org/10.1016/j.jgr.2025.07.002",
+      "citations": 3,
+      "citationsAsOf": "2026-05-27"
     },
     {
       "id": "10.1186/S12943-025-02543-Z",
@@ -92,7 +100,13 @@
       "venue": "Molecular Cancer",
       "year": 2025,
       "doi": "10.1186/S12943-025-02543-Z",
-      "url": "https://doi.org/10.1186/s12943-025-02543-z"
+      "url": "https://doi.org/10.1186/s12943-025-02543-z",
+      "citations": 1,
+      "citationsAsOf": "2026-05-27",
+      "tags": [
+        "cancer",
+        "stemcell"
+      ]
     },
     {
       "id": "10.1016/J.CARPTA.2025.100933",
@@ -110,7 +124,9 @@
       "venue": "Carbohydrate Polymer Technologies and Applications",
       "year": 2025,
       "doi": "10.1016/J.CARPTA.2025.100933",
-      "url": "https://doi.org/10.1016/j.carpta.2025.100933"
+      "url": "https://doi.org/10.1016/j.carpta.2025.100933",
+      "citations": 1,
+      "citationsAsOf": "2026-05-27"
     },
     {
       "id": "10.1186/S12943-025-02343-5",
@@ -138,7 +154,12 @@
       "venue": "Molecular Cancer",
       "year": 2025,
       "doi": "10.1186/S12943-025-02343-5",
-      "url": "https://doi.org/10.1186/s12943-025-02343-5"
+      "url": "https://doi.org/10.1186/s12943-025-02343-5",
+      "citations": 2,
+      "citationsAsOf": "2026-05-27",
+      "tags": [
+        "cancer"
+      ]
     },
     {
       "id": "10.1038/s41467-024-49382-y",
@@ -164,7 +185,9 @@
       "venue": "Nature Communications",
       "year": 2024,
       "doi": "10.1038/s41467-024-49382-y",
-      "url": "https://doi.org/10.1038/s41467-024-49382-y"
+      "url": "https://doi.org/10.1038/s41467-024-49382-y",
+      "citations": 4,
+      "citationsAsOf": "2026-05-27"
     },
     {
       "id": "10.3390/CELLS13231991",
@@ -184,7 +207,12 @@
       "venue": "Cells",
       "year": 2024,
       "doi": "10.3390/CELLS13231991",
-      "url": "https://doi.org/10.3390/cells13231991"
+      "url": "https://doi.org/10.3390/cells13231991",
+      "citations": 13,
+      "citationsAsOf": "2026-05-27",
+      "tags": [
+        "organoids"
+      ]
     },
     {
       "id": "10.1126/sciadv.adh9673",
@@ -209,7 +237,9 @@
       "venue": "Science Advances",
       "year": 2023,
       "doi": "10.1126/sciadv.adh9673",
-      "url": "https://doi.org/10.1126/sciadv.adh9673"
+      "url": "https://doi.org/10.1126/sciadv.adh9673",
+      "citations": 12,
+      "citationsAsOf": "2026-05-27"
     },
     {
       "id": "10.1101/2023.01.24.525366",
@@ -234,7 +264,9 @@
       "venue": "",
       "year": 2023,
       "doi": "10.1101/2023.01.24.525366",
-      "url": "https://doi.org/10.1101/2023.01.24.525366"
+      "url": "https://doi.org/10.1101/2023.01.24.525366",
+      "citations": 0,
+      "citationsAsOf": "2026-05-27"
     },
     {
       "id": "10.1186/S12967-023-04053-2",
@@ -257,7 +289,12 @@
       "venue": "Journal of Translational Medicine",
       "year": 2023,
       "doi": "10.1186/S12967-023-04053-2",
-      "url": "https://doi.org/10.1186/s12967-023-04053-2"
+      "url": "https://doi.org/10.1186/s12967-023-04053-2",
+      "citations": 23,
+      "citationsAsOf": "2026-05-27",
+      "tags": [
+        "cancer"
+      ]
     },
     {
       "id": "10.1093/BIB/BBAC593",
@@ -273,7 +310,13 @@
       "venue": "Briefings in Bioinformatics",
       "year": 2022,
       "doi": "10.1093/BIB/BBAC593",
-      "url": "https://doi.org/10.1093/bib/bbac593"
+      "url": "https://doi.org/10.1093/bib/bbac593",
+      "citations": 1,
+      "citationsAsOf": "2026-05-27",
+      "tags": [
+        "cancer",
+        "evolution"
+      ]
     },
     {
       "id": "10.1038/S12276-022-00891-0",
@@ -299,7 +342,9 @@
       "venue": "Experimental &amp; Molecular Medicine",
       "year": 2022,
       "doi": "10.1038/S12276-022-00891-0",
-      "url": "https://doi.org/10.1038/s12276-022-00891-0"
+      "url": "https://doi.org/10.1038/s12276-022-00891-0",
+      "citations": 8,
+      "citationsAsOf": "2026-05-27"
     },
     {
       "id": "10.1016/J.STEM.2022.04.001",
@@ -333,7 +378,12 @@
       "venue": "Cell Stem Cell",
       "year": 2022,
       "doi": "10.1016/J.STEM.2022.04.001",
-      "url": "https://doi.org/10.1016/j.stem.2022.04.001"
+      "url": "https://doi.org/10.1016/j.stem.2022.04.001",
+      "citations": 48,
+      "citationsAsOf": "2026-05-27",
+      "tags": [
+        "stemcell"
+      ]
     },
     {
       "id": "10.1101/2021.05.09.443220",
@@ -356,7 +406,9 @@
       "venue": "",
       "year": 2021,
       "doi": "10.1101/2021.05.09.443220",
-      "url": "https://doi.org/10.1101/2021.05.09.443220"
+      "url": "https://doi.org/10.1101/2021.05.09.443220",
+      "citations": 1,
+      "citationsAsOf": "2026-05-27"
     },
     {
       "id": "10.1038/s41467-020-19313-8",
@@ -373,7 +425,13 @@
       "venue": "Nature Communications",
       "year": 2020,
       "doi": "10.1038/s41467-020-19313-8",
-      "url": "https://doi.org/10.1038/s41467-020-19313-8"
+      "url": "https://doi.org/10.1038/s41467-020-19313-8",
+      "citations": 198,
+      "citationsAsOf": "2026-05-27",
+      "tags": [
+        "organoids",
+        "cancer"
+      ]
     },
     {
       "id": "10.1038/s41598-019-57187-z",
@@ -389,7 +447,9 @@
       "venue": "Scientific Reports",
       "year": 2020,
       "doi": "10.1038/s41598-019-57187-z",
-      "url": "https://doi.org/10.1038/s41598-019-57187-z"
+      "url": "https://doi.org/10.1038/s41598-019-57187-z",
+      "citations": 5,
+      "citationsAsOf": "2026-05-27"
     },
     {
       "id": "10.1038/S41598-019-48273-3",
@@ -405,7 +465,9 @@
       "venue": "Scientific Reports",
       "year": 2019,
       "doi": "10.1038/S41598-019-48273-3",
-      "url": "https://doi.org/10.1038/s41598-019-48273-3"
+      "url": "https://doi.org/10.1038/s41598-019-48273-3",
+      "citations": 2,
+      "citationsAsOf": "2026-05-27"
     },
     {
       "id": "10.1093/MOLBEV/MSY056",
@@ -420,7 +482,12 @@
       "venue": "Molecular Biology and Evolution",
       "year": 2018,
       "doi": "10.1093/MOLBEV/MSY056",
-      "url": "https://doi.org/10.1093/molbev/msy056"
+      "url": "https://doi.org/10.1093/molbev/msy056",
+      "citations": 25,
+      "citationsAsOf": "2026-05-27",
+      "tags": [
+        "evolution"
+      ]
     },
     {
       "id": "10.1016/J.IMR.2017.03.002",
@@ -438,7 +505,9 @@
       "venue": "Integrative Medicine Research",
       "year": 2017,
       "doi": "10.1016/J.IMR.2017.03.002",
-      "url": "https://doi.org/10.1016/j.imr.2017.03.002"
+      "url": "https://doi.org/10.1016/j.imr.2017.03.002",
+      "citations": 0,
+      "citationsAsOf": "2026-05-27"
     },
     {
       "id": "10.18632/oncotarget.11269",
@@ -456,7 +525,9 @@
       "venue": "Oncotarget",
       "year": 2016,
       "doi": "10.18632/oncotarget.11269",
-      "url": "https://doi.org/10.18632/oncotarget.11269"
+      "url": "https://doi.org/10.18632/oncotarget.11269",
+      "citations": 506,
+      "citationsAsOf": "2026-05-27"
     },
     {
       "id": "10.1371/journal.pcbi.1003881",
@@ -470,9 +541,14 @@
       "venue": "PLoS Computational Biology",
       "year": 2014,
       "doi": "10.1371/journal.pcbi.1003881",
-      "url": "https://doi.org/10.1371/journal.pcbi.1003881"
+      "url": "https://doi.org/10.1371/journal.pcbi.1003881",
+      "citations": 17,
+      "citationsAsOf": "2026-05-27",
+      "tags": [
+        "evolution"
+      ]
     }
   ],
-  "lastUpdated": "2026-05-27T00:37:01.834Z",
-  "source": "Auto-extracted from ORCID 0000-0002-7093-842X + Crossref enrichment."
+  "lastUpdated": "2026-05-27T07:48:19.082Z",
+  "source": "Auto-extracted from ORCID 0000-0002-7093-842X + Crossref enrichment + OpenAlex citations + keyword tag inference."
 }
