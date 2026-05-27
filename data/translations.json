@@ -43,6 +43,7 @@
   "team.role.undergrad": { "en": "Undergraduate Students", "ko": "학부 연구생" },
   "team.role.alumni_link": { "en": "View Alumni →", "ko": "동문 보기 →" },
   "team.empty.role": { "en": "No members in this role yet.", "ko": "이 역할의 구성원이 아직 없습니다." },
+  "team.joined": { "en": "Joined {date}", "ko": "{date} 합류" },
 
   "research.title": { "en": "Research", "ko": "연구" },
   "research.intro": { "en": "Three intertwined themes drive our work.", "ko": "세 가지 연구 주제가 서로 맞물려 우리의 연구를 이끕니다." },
