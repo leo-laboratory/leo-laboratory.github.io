@@ -22,14 +22,14 @@ export function LabFooter() {
         borderColor: 'var(--border)',
       }}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid gap-10 md:grid-cols-3">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid gap-10 md:grid-cols-3">
         <div>
           <Image
             src="/assets/logo.png"
             alt="LEO Lab"
             width={2007}
             height={1615}
-            className="h-20 w-auto mb-3"
+            className="h-16 w-auto mb-3"
           />
           <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
             {lab.fullName[locale] ?? lab.fullName.en}
