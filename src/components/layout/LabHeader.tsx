@@ -31,8 +31,8 @@ export function LabHeader() {
           <Image
             src="/assets/logo.png"
             alt="LEO Lab"
-            width={2007}
-            height={1615}
+            width={318}
+            height={256}
             priority
             className="h-8 w-auto"
           />

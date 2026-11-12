@@ -27,8 +27,8 @@ export function LabFooter() {
           <Image
             src="/assets/logo.png"
             alt="LEO Lab"
-            width={2007}
-            height={1615}
+            width={318}
+            height={256}
             className="h-16 w-auto mb-3"
           />
           <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
