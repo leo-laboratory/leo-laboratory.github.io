@@ -116,6 +116,39 @@
       ],
       "bio": { "en": "", "ko": "" },
       "joined": "2026.03"
+    },
+    {
+      "id": "yoonha-kim",
+      "name": "Yoonha Kim",
+      "nameKo": "김윤하",
+      "role": "undergrad",
+      "title": {
+        "en": "Undergraduate Student, CNU",
+        "ko": "학부연구생 (충남대)"
+      },
+      "affiliations": [
+        { "en": "Chungnam National University", "ko": "충남대학교" }
+      ],
+      "bio": { "en": "", "ko": "" },
+      "photo": "/assets/team/yoonha.jpg",
+      "joined": "2026.10"
+    },
+    {
+      "id": "kanghee-cho",
+      "name": "Kanghee Cho",
+      "nameKo": "조강희",
+      "role": "phd",
+      "title": {
+        "en": "Intern for PhD Program, UST",
+        "ko": "박사과정 인턴 (UST)"
+      },
+      "affiliations": [
+        { "en": "Soongsil University", "ko": "숭실대학교" }
+      ],
+      "bio": { "en": "", "ko": "" },
+      "photo": "/assets/team/kanghee.jpg",
+      "scholar": "https://scholar.google.com/citations?user=fpXE1oUAAAAJ",
+      "joined": "2026.11"
     }
   ],
   "roles": [
