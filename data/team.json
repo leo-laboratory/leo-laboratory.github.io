@@ -94,10 +94,10 @@
       "role": "project",
       "title": {
         "en": "Adjunct Member · IBS Center for Genome Engineering (Dr. Bon-Kyoung Koo)",
-        "ko": "겸임 연구원 · IBS 유전체 교정 연구단 (구본경 박사)"
+        "ko": "겸임 연구원 · IBS 유전체 교정 연구단 (구본경 단장)"
       },
       "affiliations": [
-        { "en": "IBS Center for Genome Engineering, Lab of Dr. Bon-Kyoung Koo", "ko": "IBS 유전체 교정 연구단 구본경 박사 연구실" }
+        { "en": "IBS Center for Genome Engineering, Lab of Dr. Bon-Kyoung Koo", "ko": "IBS 유전체 교정 연구단 구본경 단장 연구실" }
       ],
       "bio": { "en": "", "ko": "" },
       "photo": "/assets/team/onyu.jpg",
@@ -109,10 +109,10 @@
       "role": "project",
       "title": {
         "en": "Adjunct Member · Duke Kunshan University (Prof. Eunyu Kim)",
-        "ko": "겸임 연구원 · 듀크 쿤샨대학교 (김은유 교수)"
+        "ko": "겸임 연구원 · 듀크 쿤샨 대학교 (김은유 교수)"
       },
       "affiliations": [
-        { "en": "Duke Kunshan University, Lab of Prof. Eunyu Kim", "ko": "듀크 쿤샨대학교 김은유 교수 연구실" }
+        { "en": "Duke Kunshan University, Lab of Prof. Eunyu Kim", "ko": "듀크 쿤샨 대학교 김은유 교수 연구실" }
       ],
       "bio": { "en": "", "ko": "" },
       "joined": "2026.03"
